@@ -3,6 +3,7 @@
 > Keys when in emacs mode. You can switch to 'vi' mode with 'set -o vi' command. Be back to emacs mode with 'set -o emacs'.
 
 ##### Movements
+
 | Command    | Description                           |
 |------------|---------------------------------------|
 | Ctrl + a   | Go to beginning of line.              |
@@ -13,6 +14,7 @@
 | Alt + b    | Move backwards one word.              |
 
 ##### Editing
+
 | Command                          | Description                                              |
 |----------------------------------|----------------------------------------------------------|
 | Ctrl + k                         | Delete all characters after cursor.                      |
@@ -29,6 +31,7 @@
 | Ctrl + x, Ctrl + e               | Edit command in editor.                                   |
 
 ##### History
+
 | Command    | Description                                              |
 |------------|----------------------------------------------------------|
 | !n         | Execute nth command in history.                          |
@@ -44,6 +47,7 @@
 | Ctrl + o   | Run the command found in history mode.                    |
 
 ##### Jobs
+
 | Command      | Description                               |
 |--------------|-------------------------------------------|
 | Ctrl + z     | Suspends current command execution and moves it to the background. |
