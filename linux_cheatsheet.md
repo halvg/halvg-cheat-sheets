@@ -19,7 +19,7 @@
 |----------------------------------|----------------------------------------------------------|
 | Ctrl + k                         | Delete all characters after cursor.                      |
 | Ctrl + u                         | Delete all characters before cursor.                     |
-| Ctrl + w || Alt + Backspace      | Delete previous word or all characters of the word before cursor. |
+| Ctrl + w **or** Alt + Backspace  | Delete previous word or all characters of the word before cursor. |
 | Alt + d                          | Delete next word or all characters of the word after cursor.|
 | Ctrl + y                         | Paste previous deleted text.                             |
 | Alt + u                          | Capitalize all characters in a word after the cursor.     |
