@@ -1,3 +1,5 @@
+# Linux cheat sheet
+
 ## Bash shortcuts
 
 > Keys when in emacs mode. You can switch to 'vi' mode with 'set -o vi' command. Be back to emacs mode with 'set -o emacs'.
