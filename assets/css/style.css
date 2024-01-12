@@ -1,0 +1,13 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.markdown-body table th, .markdown-body table td {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+
+
