@@ -3,13 +3,44 @@
 
 @import "{{ site.theme }}";
 
-.markdown-body table th, .markdown-body table td {
-    padding-top: 3px;
-    padding-bottom: 3px;
+.markdown-body {
+    line-height: 1.2;
 }
 
-#linux-cheat-sheet {
-    color: orange;
+h1 a {
+    font-size: 0.8em;
+}
+
+h1 a::before {
+    content: "\01F916   ";
+}
+
+h1:not(:has(a)) {
+}
+
+.markdown-body table.shortcuts-table  {
+}
+
+.markdown-body table.shortcuts-table th {
+    display: none;
+}
+
+.markdown-body table.shortcuts-table tr  {
+    border: none;
+}
+.markdown-body table.shortcuts-table td  {
+    border: none;
+}
+
+.markdown-body table.shortcuts-table tr td:first-child {
+    min-width: 150px;
+    max-width: 150px;
+    overflow:visible;
+    white-space: normal;
+}
+
+.markdown-body table.shortcuts-table tr td:nth-child(2) {
+    width: 600px;
 }
 
 
