@@ -14,6 +14,7 @@
 | Ctrl + b   | Move backwards one character.         |
 | Alt + f    | Move forward one word.                |
 | Alt + b    | Move backwards one word.              |
+{:.shortcuts-table}
 
 ##### Editing
 
@@ -31,6 +32,7 @@
 | Ctrl + m                         | Enter. In practice same as RETURN.                        |
 | Ctrl + j                         | Newline. In practice same as RETURN.                      |
 | Ctrl + x, Ctrl + e               | Edit command in editor.                                   |
+{:.shortcuts-table}
 
 ##### History
 
@@ -47,6 +49,7 @@
 | Ctrl + n   | Fetch the next command from the history list.             |
 | Ctrl + g   | Escape from history searching mode.                       |
 | Ctrl + o   | Run the command found in history mode.                    |
+{:.shortcuts-table}
 
 ##### Jobs
 
@@ -60,6 +63,7 @@
 | %s           | Job whose command line starts with s      |
 | %%           | Current job                               |
 | %-           | Previous job                              |
+{:.shortcuts-table}
 
 
 ## Users Information and Management
