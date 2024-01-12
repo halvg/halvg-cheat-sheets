@@ -1,7 +1,7 @@
 # Linux cheat sheet
 
 * TOC (placeholder for the automatic creation of a Table of contents)
-* {:toc}
+{:toc}
 
 ## Bash shortcuts
 
