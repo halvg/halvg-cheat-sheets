@@ -4,7 +4,7 @@
 
 > Keys when in emacs mode. You can switch to 'vi' mode with 'set -o vi' command. Be back to emacs mode with 'set -o emacs'.
 
-##### Movements
+#### Movements
 
 | Command    | Description                           |
 |------------|---------------------------------------|
@@ -16,7 +16,7 @@
 | Alt + b    | Move backwards one word.              |
 {:.shortcuts-table}
 
-##### Editing
+#### Editing
 
 | Command                          | Description                                              |
 |----------------------------------|----------------------------------------------------------|
@@ -34,7 +34,7 @@
 | Ctrl + x, Ctrl + e               | Edit command in editor.                                   |
 {:.shortcuts-table}
 
-##### History
+#### History
 
 | Command    | Description                                              |
 |------------|----------------------------------------------------------|
@@ -51,7 +51,7 @@
 | Ctrl + o   | Run the command found in history mode.                    |
 {:.shortcuts-table}
 
-##### Jobs
+#### Jobs
 
 | Command      | Description                               |
 |--------------|-------------------------------------------|
