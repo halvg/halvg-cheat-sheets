@@ -50,6 +50,8 @@
 
 ### Pseudo elements
 
+A CSS pseudo-element is used to style specified parts of an element.
+
 | Selector           | Example          | Example Description                                               |
 | ------------------- | -----------------| ------------------------------------------------------------------ |
 | `::after`           | `p::after`       | Insert something after the content of each `<p>` element          |
@@ -60,6 +62,8 @@
 | `::selection`       | `p::selection`   | Selects the portion of an element that is selected by a user      |
 
 ### Pseudo classes
+
+A pseudo-class is used to define a special state of an element.
 
 | Selector                | Example                 | Example Description                                                       |
 | ----------------------- | ----------------------- | -------------------------------------------------------------------------- |
