@@ -185,4 +185,67 @@ sar                       # Collect, report, or save system activity information
 iostat                    # Report CPU and I/O statistics.
 ```
 
- 
+## Files
+
+| Command | Option | Description                                       |
+|---------|--------|---------------------------------------------------|
+| **ls**  |        | List directory contents                           |
+| ^       | -h     | Human readable                                    | 
+| ^       | -a     | List all files, including hidden                  | 
+| ^       | -l     | Long format list                                  | 
+| ^       | -d     | List directory names instead of contents          | 
+| ^       | -S     | Sort by size                                      |
+| ^       | -t     | Sort by time                                      |
+| ^       | -r     | Reverse order                                     |
+| ^       | -s     | Print allocated size of each file in blocks       |
+| ^       | -1     | One file per line                                 |
+| ^       | ./     | List contents one level deep                      |
+| ^       | -i     | Get inode number of file (file id). Use `sudo find / -inum <number>` to find all links that point to the same file.|
+
+| Command | Option | Description                                       |
+|---------|--------|---------------------------------------------------|
+| **cp**  |        | Copy files or directories                         |
+|         | -r     | Copy directories recursively                       | 
+|         | -i     | Prompt before overwriting files                    | 
+|         | -u     | Copy only when the source file is newer or missing| 
+|         | -n     | Do not overwrite existing files                    | 
+|         | -a     | Archive mode (preserving ownership and permissions)| 
+|         | -l     | Create hard links instead of copying               | 
+|         | -s     | Create symbolic links instead of copying           | 
+|         | -T     | Treat the destination as a file                     |
+|         | -P     | Do not follow symbolic links in source              |
+|         | -v     | Verbose mode (showing files as they are copied)    | 
+
+| Command | Option | Description                                       |
+|---------|--------|---------------------------------------------------|
+| **rm**  |        | Remove files or directories                       |
+|         | -r     | Remove directories and their contents recursively | 
+|         | -i     | Prompt before every removal                        | 
+|         | -f     | Force removal without confirmation                 | 
+|         | -u     | Remove only when the file is newer or missing      | 
+|         | -l     | Remove symbolic links only                         | 
+|         | -d     | Remove empty directories                           | 
+|         | -R     | Similar to -r, used for compatibility               |
+|         | -P     | Overwrite regular files before deleting             |
+|         | -W     | Attempt to undelete the named files                 |
+|         | -v     | Verbose mode (showing files as they are removed)   | 
+
+| Command | Option  | Description                                       |
+|---------|---------|---------------------------------------------------|
+| **mkdir** |        | Create directories                                |
+|         | -p      | Create parent directories as needed               | 
+|         | -m      | Set the file mode (permissions) for the created directory | 
+|         | -v      | Verbose mode (display the created directory)       | 
+
+| Command | Option  | Description                                       |
+|---------|---------|---------------------------------------------------|
+| **ln**  |         | Create links to files and directories             |
+| *syntax*|         | ln [options] {{path/to/file_or_directory}} {{path/to/symlink}}      |
+|         | -s      | Create symbolic links (symlinks)                  | 
+|         | -f      | Force. Remove existing destination files          | 
+|         | -b      | Make a backup of the existing target file         | 
+|         | -i      | Prompt before removing existing destination files | 
+|         | -r      | Make relative symbolic links                      | 
+|         | -T      | Treat the target as a normal file                  | 
+|         | -v      | Verbose mode (show the files as they are processed)| 
+
