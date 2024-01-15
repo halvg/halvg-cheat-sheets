@@ -2,5 +2,5 @@
 
 - [Linux](linux_cheatsheet.md)
 - CSS
-    * [CSS Basics](cshs_css_basics.md)
-    * [CSS Specifity](cshs_css_specifity.md)
+    * [CSS Basics](chsh_css_basics.md)
+    * [CSS Specifity](chsh_css_specifity.md)
