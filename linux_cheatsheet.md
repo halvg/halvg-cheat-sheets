@@ -187,6 +187,8 @@ iostat                    # Report CPU and I/O statistics.
 
 ## Files
 
+### GNU Coreutils
+
 | Command | Option | Description                                       |
 |---------|--------|---------------------------------------------------|
 | **ls**  |        | List directory contents                           |
@@ -232,10 +234,26 @@ iostat                    # Report CPU and I/O statistics.
 
 | Command | Option  | Description                                       |
 |---------|---------|---------------------------------------------------|
+| **rmdir**|         | Remove empty directories                         |
+|         | -p      | Remove parent directories as needed              | 
+|         | -v      | Verbose mode (show removed directories)          | 
+
+| Command | Option  | Description                                       |
+|---------|---------|---------------------------------------------------|
 | **mkdir** |        | Create directories                                |
 |         | -p      | Create parent directories as needed               | 
 |         | -m      | Set the file mode (permissions) for the created directory | 
 |         | -v      | Verbose mode (display the created directory)       | 
+
+| Command | Option  | Description                                       |
+|---------|---------|---------------------------------------------------|
+| **touch**|         | Change file timestamps or create empty files     |
+|         | -c      | Do not create the file if it does not exist      | 
+|         | -a      | Change only the access time                      | 
+|         | -m      | Change only the modification time                  | 
+|         | -t      | Set file time to specific value: (YYYYMMDDhhmm.ss) |
+|         | -d      | Use a specified date/time                         | 
+|         | -r      | Use the timestamp of another file                | 
 
 | Command | Option  | Description                                       |
 |---------|---------|---------------------------------------------------|
@@ -248,4 +266,59 @@ iostat                    # Report CPU and I/O statistics.
 |         | -r      | Make relative symbolic links                      | 
 |         | -T      | Treat the target as a normal file                  | 
 |         | -v      | Verbose mode (show the files as they are processed)| 
+
+| Command | Option  | Description                                       |
+|---------|---------|---------------------------------------------------|
+| **df**  |         | Report file system  disk space usage              |
+|         | -h      | Human-readable format (KB, MB, GB)               | 
+|         | -T      | Show filesystem type                              | 
+|         | -t      | Limit the display to specific filesystem types   | 
+|         | -i      | Display inode information                         | 
+|         | -k      | Display sizes in kilobytes                        | 
+|         | -m      | Display sizes in megabytes                        | 
+|         | -P      | Output in POSIX format                            | 
+|         | -x      | Exclude specific filesystem types                | 
+
+| Command | Option  | Description                                       |
+|---------|---------|---------------------------------------------------|
+| **du**  |         | Display disk usage of files and directories      |
+|         | -h      | Human-readable format (KB, MB, GB)               | 
+|         | -d      | Specify the depth of the display                 | 
+|         | -c      | Display a grand total                             | 
+|         | -s      | Display only a total for each argument           | 
+|         | -a      | Show all files, not just directories             | 
+|         | -k      | Display sizes in kilobytes                        | 
+|         | -m      | Display sizes in megabytes                        | 
+|         | -g      | Display sizes in gigabytes                        | 
+|         | --exclude | Exclude specific directories or files            | 
+|         | --max-depth | Print the total for each directory at most N levels deep | 
+|         | --time  | Show time of the last modification                | 
+|         | --help  | Display help information                           | 
+|         | --version| Display version information                        |
+
+
+### Other Non GNU Coreutils
+
+| Command | Option  | Description                                       |
+|---------|---------|---------------------------------------------------|
+| **tree**|         | List contents of directories in a tree-like format|
+|         | -a      | All files are listed including hidden ones        | 
+|         | -L      | Level of depth for directories to show             | 
+|         | -d      | List only directories                             | 
+|         | -f      | Display the full path prefix                      | 
+|         | -i      | Don't print indentation lines                      | 
+|         | -p      | Print the protections for each file                | 
+|         | -s      | Print the size of each file                        | 
+|         | -h      | Print human-readable file sizes                    | 
+|         | -u      | Display file modification times                    | 
+
+| Command | Option  | Description                                       |
+|---------|---------|---------------------------------------------------|
+| **file**|         | Determine file type                               |
+|         | -b      | Do not prepend filenames to output               | 
+|         | -z      | Look inside a zipped file and determine the file type(s) inside  | 
+|         | -L      | Follow symbolic links                             | 
+|         | -i      | Determine the MIME encoding type of a file.       |
+|         | --help  | Display help information                           | 
+|         | --version| Display version information                        |
 
