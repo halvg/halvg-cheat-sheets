@@ -140,16 +140,16 @@
 | Login non-Interactive     | • |   | |     | | • |    |  •  |
 | Non-login Interactive     |   | • | | yes | |   | •  |     |
 | Non-login non-Interactive |   |   | | yes | |   |    |  •  |
-
-##### Table legend
-
-    - **L**: Login shell. `argv[0][0] == '-'`, `--login`
-    - **I**: Interactive shell. `-i`, stdin is tty
-    - **inh**: Inherits environment from a parent (other than init); i.e., it's not a "fresh login" and the parent may expect that the environment be kept intact.
-    - **p**: sources `/etc/profile` then first of `~/.bash_profile`, `~/.bash_login`, `~/.profile`
-    - **rc**: sources `/etc/bash.bashrc` then `~/.bashrc`
-    - **$en**: sources the file in `$BASH_ENV` if any defined
 [^1]
+
+> ##### Table legend
+> 
+> - **L**: Login shell. `argv[0][0] == '-'`, `--login`
+> - **I**: Interactive shell. `-i`, stdin is tty
+> - **inh**: Inherits environment from a parent (other than init); i.e., it's not a "fresh login" and the parent may expect that the environment be kept intact.
+> - **p**: sources `/etc/profile` then first of `~/.bash_profile`, `~/.bash_login`, `~/.profile`
+> - **rc**: sources `/etc/bash.bashrc` then `~/.bashrc`
+> - **$en**: sources the file in `$BASH_ENV` if any defined
 
 Diagram showing flow of initialization files in differente shells by [*flowbloki*](https://blog.flowblok.id.au/2013-02/shell-startup-scripts.html).
 
@@ -163,14 +163,14 @@ When run a **login Interactive** or **login non-Interactive** shell, when exited
 
 ### Testing state
 - Check if in interactive shell (Not reliable under some circunstancies like old Bourne shells)
-    * [[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'
+    * `[[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'`
 - Check if in a login shell
-    * shopt login_shell
+    * `shopt login_shell`
 
 ## Useful commands
 
-- List all the shells currently installed in the machine
-    * cat /etc/shells
+List all the shells currently installed in the machine:
+: `cat /etc/shells`
 
 
 ***
