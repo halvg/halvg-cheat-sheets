@@ -134,15 +134,16 @@
 
 ### Ititialization
 
+#### Table
+
 |                           | L | I | | inh | | p | rc | $en |
 | ------------------------- |:-:|:-:|-|:---:|-|:-:|:--:|:---:|
 | Login Interactive         | • | • | |     | | • |    |     |
 | Login non-Interactive     | • |   | |     | | • |    |  •  |
 | Non-login Interactive     |   | • | | yes | |   | •  |     |
 | Non-login non-Interactive |   |   | | yes | |   |    |  •  |
-[^1]
 
-> ##### Table legend
+> Table legend:
 > 
 > - **L**: Login shell. `argv[0][0] == '-'`, `--login`
 > - **I**: Interactive shell. `-i`, stdin is tty
@@ -150,6 +151,10 @@
 > - **p**: sources `/etc/profile` then first of `~/.bash_profile`, `~/.bash_login`, `~/.profile`
 > - **rc**: sources `/etc/bash.bashrc` then `~/.bashrc`
 > - **$en**: sources the file in `$BASH_ENV` if any defined
+
+[^1]
+
+#### Diagram
 
 Diagram showing flow of initialization files in differente shells by [*flowbloki*](https://blog.flowblok.id.au/2013-02/shell-startup-scripts.html).
 
