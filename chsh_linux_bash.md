@@ -130,3 +130,54 @@
 | `while`         | Loop construct.                                                              |
 
 
+## Initalization files and behaviour
+
+### Ititialization
+
+|                           | L | I | | inh | | p | rc | $en |
+| ------------------------- |:-:|:-:|-|:---:|-|:-:|:--:|:---:|
+| Login Interactive         | • | • | |     | | • |    |     |
+| Login non-Interactive     | • |   | |     | | • |    |  •  |
+| Non-login Interactive     |   | • | | yes | |   | •  |     |
+| Non-login non-Interactive |   |   | | yes | |   |    |  •  |
+
+##### Table legend
+
+    - **L**: Login shell. `argv[0][0] == '-'`, `--login`
+    - **I**: Interactive shell. `-i`, stdin is tty
+    - **inh**: Inherits environment from a parent (other than init); i.e., it's not a "fresh login" and the parent may expect that the environment be kept intact.
+    - **p**: sources `/etc/profile` then first of `~/.bash_profile`, `~/.bash_login`, `~/.profile`
+    - **rc**: sources `/etc/bash.bashrc` then `~/.bashrc`
+    - **$en**: sources the file in `$BASH_ENV` if any defined
+[^1]
+
+Diagram showing flow of initialization files in differente shells by [*flowbloki*](https://blog.flowblok.id.au/2013-02/shell-startup-scripts.html).
+
+To read it, pick shell, wheter it's a login shell, wheter it's interactive, and follow the same colour through the diagram. When the arrow split out to multipli files, it means that the shell will try to read each on in turn (working left to right), and will use the firt one it can read.
+
+![Shell init files](images/shell-startup-diagram.png)
+
+### Logout
+
+When run a **login Interactive** or **login non-Interactive** shell, when exited `~/.bash_logout` is executed.
+
+### Testing state
+- Check if in interactive shell (Not reliable under some circunstancies like old Bourne shells)
+    * [[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'
+- Check if in a login shell
+    * shopt login_shell
+
+## Useful commands
+
+- List all the shells currently installed in the machine
+    * cat /etc/shells
+
+
+***
+[^1]: From useful and more complete [*Sedoc notes*](https://github.com/0cjs/sedoc/tree/master) and [*GNU Bash Documentation*](https://www.gnu.org/software/bash/manual/html_node/Bash-Startup-Files.html)
+
+
+
+
+
+
