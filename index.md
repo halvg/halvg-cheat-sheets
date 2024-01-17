@@ -7,3 +7,5 @@
 - CSS
     * [CSS Basics](chsh_css_basics.md)
     * [CSS Specifity](chsh_css_specifity.md)
+- Git
+    * [Git Basics](chsh_git_basics.md)
