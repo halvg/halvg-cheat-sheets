@@ -28,8 +28,8 @@ Check specific config:
 : `git config {property}`
 
 Set a setting:
-: `git config --[system | goblal | local] propertyName propertyValue
-: Example: 'git config --global user.name "Xuan Roces"`
+: `git config --[system | goblal | local] propertyName propertyValue`
+: Example: `git config --global user.name "Xuan Roces"`
 
 Important properties:
 
