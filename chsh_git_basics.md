@@ -38,3 +38,31 @@ Important properties:
 - `core.editor`
 - `init.defaultBranch`
 
+## Create a Repository
+
+Create a new repository from scratch
+: `git init [project name]`
+
+Download from an existing repository
+: `git clone repo_url`
+
+## Observe a Repository
+
+Status
+: `git status`
+
+> Useful options:
+> - `-s`: Short format.
+> - `-b`: Show the branch.
+
+Log
+: `git log`
+
+> Useful options:
+> - `--format=<format>`: Pretty-print in a given format, where <format> can be one of oneline, short, medium, full, fuller, reference, email, raw.
+> - `--format="<options>"`: Pretty-print in a user defined format.
+> - `--abbrev-commit`: Show reduced hash.
+> - `--oneline`: Shortand for `format=oneline --abbrev-commit`.
+> - `--graph`: Show graph.
+> - `--author <name>`: Filter commits by author.
+> - `--committer <name>`: Filter commits by committer.
