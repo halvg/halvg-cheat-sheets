@@ -66,3 +66,8 @@ Log
 > - `--graph`: Show graph.
 > - `--author <name>`: Filter commits by author.
 > - `--committer <name>`: Filter commits by committer.
+
+## Diff
+
+![A graph showing the differences between options in git diff command](images/gitdiff.svg "Mark Lodato's visual explanation of git diff command options")
+> Mark Lodato's visual explanation of git diff command options. [Mark Lodato's site](https://marklodato.github.io/visual-git-guide/index-en.html)
