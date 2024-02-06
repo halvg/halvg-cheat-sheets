@@ -71,3 +71,30 @@ Log
 
 ![A graph showing the differences between options in git diff command](images/gitdiff.svg "Mark Lodato's visual explanation of git diff command options")
 > Mark Lodato's visual explanation of git diff command options. [Mark Lodato's site](https://marklodato.github.io/visual-git-guide/index-en.html)
+
+## Branches
+
+Check branches
+: `git branch`
+
+> Useful options:
+> - `-r`: Show only remote branches.
+> - `-a`: Show all branches.
+> - `-v`: Verbose (Show last commit).
+> - `-vv`: More verbose (Show last commit and tracking branches).
+
+Create new branch
+: - `git branch <branch_name>`
+: - `git checkout -b <branch_name>`. To switch automatically to the new branch.
+: - `git switch -c <branch_name>`. To switch automatically to the new branch.
+
+Switch branch
+: - `git checkout <branch_name>`
+
+Delete branch
+: - `git branch -d <branch_name>`
+
+Merge branch into checked out branch
+: - `git merge <branch_to_be_merged_with>`
+
+
