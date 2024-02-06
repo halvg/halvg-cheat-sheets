@@ -74,7 +74,7 @@ Log
 
 ## Branches
 
-Check branches
+List branches
 : `git branch`
 
 > Useful options:
@@ -90,6 +90,7 @@ Create new branch
 
 Switch branch
 : - `git checkout <branch_name>`
+: - `git switch <branch_name>`
 
 Delete branch
 : - `git branch -d <branch_name>`
